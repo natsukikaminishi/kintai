@@ -14,4 +14,5 @@ Android Studio
   etc</br>
 
 ## サンプルgif
+![sample](https://github.com/natsukikaminishi/kintai/blob/master/kintai_app.gif)
 https://github.com/natsukikaminishi/kintai/blob/master/kintai_app.gif
