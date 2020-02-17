@@ -7,9 +7,10 @@
 ## このアプリを見るおすすめの人
 ・初心者だけど、とにかく何か動くものが作りたい人</br>
  (html,css,js不要で、簡単に動きます。)</br>
+ (MySQLなどのpre installも不要で、Android Stadioさえinstallすれば開発できます。)</br>
 
 ## 開発環境
-Android Studio
+Android Studio + Androidの実機があれば尚可
 
 ## 主な機能
 ・text入力/計算/保存</br>
