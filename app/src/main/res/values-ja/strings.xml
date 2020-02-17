@@ -1,0 +1,89 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">勤怠アプリ</string>
+    <string name="action_settings">設定</string>
+    <string name="action_mail">Mail 設定</string>
+
+    <!-- common(main,setting) -->
+    <string name="over_time">残業時間</string>
+    <string name="working_time">実労働時間</string>
+    <string name="workContent" >作業内容 {fa_laptop}</string>
+    <string name="button_refresh">更新 {fa_refresh}</string>
+    <string name="button_setting">設定 {fa_cog}</string>
+    <string name="mail_calc_15">15日時点の残業時間 </string>
+
+    <!-- Dialog -->
+    <string name="dayOff_lateOrEarly">休暇 {fa_clock_o} 　　 / 控除 {fa_clock_o}</string>
+
+    <!-- about Time -->
+    <string name="startTimeMes">勤務開始時間を入力してください</string>
+    <string name="endTimeMes">勤務終了時間を入力してください</string>
+    <string name="point_symbol" translatable="false">.</string>
+    <string name="colon_symbol" translatable="false">:</string>
+
+    <!-- Mail -->
+    <string name="to_address">宛先</string>
+    <string name="cc_address">CC</string>
+    <string name="mail_title">件名</string>
+    <string name="mail_main">本文</string>
+
+    <!-- setting -->
+    <string name="setting_name">名前 {fa_user_o}</string>
+    <string name="setting_work_content">作業内容 {fa_laptop}</string>
+    <string name="setting_times">開始時間 / 終了時間 / 休憩時間 {fa_clock_o}</string>
+    <string name="setting_ftp_text">FtpユーザID {fa_user}/ Ftpパスワード {fa_key}</string>
+    <string name="setting_local_directory">ローカルディレクトリ {fa_file_text_o}</string>
+    <string name="setting_remote_directory">アップロード先リモートディレクトリ {fa_file_text}</string>
+    <string name="setting_confirm">確認</string>
+    <string name="seting_create">作成 {fa_save}</string>
+    <string name="setting_transfer">転送 {fa_arrow_circle_o_up}</string>
+    <string name="setting_month">月選択 {fa_calendar}</string>
+    <string name="setting_text_confirm">確認 {fa_certificate}</string>
+    <string name="setting_mail">Mail 設定 {fa_envelope_open}</string>
+
+    <!-- カレンダの出力定義 -->
+    <string name="material_calendar_monday">月</string>
+    <string name="material_calendar_tuesday">火</string>
+    <string name="material_calendar_wednesday">水</string>
+    <string name="material_calendar_thursday">木</string>
+    <string name="material_calendar_friday">金</string>
+    <string name="material_calendar_saturday">土</string>
+    <string name="material_calendar_sunday">日</string>
+
+    <array name="material_calendar_months_array">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </array>
+
+    <!-- Spinnerの出力定義 -->
+    <string-array name="monthList">
+        <item>前月</item>
+        <item>今月</item>
+    </string-array>
+
+    <string-array name="dayOffList">
+        <item>　　</item>
+        <item>特休</item>
+        <item>振休</item>
+        <item>欠勤</item>
+        <item>有休</item>
+        <item>祝日</item>
+    </string-array>
+
+    <string-array name="lateOrEarly">
+        <item>　　</item>
+        <item>遅刻</item>
+        <item>早退</item>
+    </string-array>
+
+</resources>

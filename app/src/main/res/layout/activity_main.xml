@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.knsw.kintai.MainActivity">
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        app:headerColor="@color/colorSuccess"
+        app:headerLabelColor="@color/whiteColor"
+        app:pagesColor="@color/whiteColor"
+        app:todayLabelColor="@color/colorDanger" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.knsw.kintai.MainActivity">
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:id="@+id/workingTime_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textSize="15sp"
+            app:bootstrapText="@string/working_time" />
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:id="@+id/overTime_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textSize="15sp"
+            app:bootstrapText="@string/over_time" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.knsw.kintai.MainActivity">
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:id="@+id/workingTime_display_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:clickable="true"
+            app:bootstrapText="" />
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:id="@+id/overTime_display_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:clickable="true"
+            app:bootstrapText="" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:context="com.knsw.kintai.MainActivity">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/RefreshButton"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="7.5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="md"
+            app:bootstrapText="@string/button_refresh"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/SettingButton"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="md"
+            app:bootstrapText="@string/button_setting"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

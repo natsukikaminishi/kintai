@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.knsw.kintai.SettingActivity">
+
+    <!--以下のライブラリを参照-->
+    <!--https://github.com/Bearded-Hen/Android-Bootstrap-->
+
+    <TextView
+        android:id="@+id/currentDateLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="@string/action_settings"
+        android:textColor="@android:color/white"
+        android:background="@color/bootstrap_brand_success"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/setting_name" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/name_edittext"
+        android:layout_width="117.5dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:roundedCorners="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/workContent_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/setting_work_content" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/workContent_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:roundedCorners="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/times_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/setting_times">
+
+    </com.beardedhen.androidbootstrap.AwesomeTextView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.knsw.kintai.SettingActivity">
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/startTime_edittext"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:focusable="false"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:roundedCorners="true"
+            android:layout_weight="1"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/endTime_edittext"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:focusable="false"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:roundedCorners="true"
+            android:layout_weight="1" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/breakTime_edittext"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:focusable="false"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:roundedCorners="true"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/ftpUser_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        app:bootstrapText="@string/setting_ftp_text" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:orientation="horizontal"
+        tools:context="com.knsw.kintai.SettingActivity">
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/ftpAccount_edittext"
+            android:layout_width="117.5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:textSize="15sp"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/ftpPassword_edittext"
+            android:layout_width="117.5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/confirm_Button"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            app:bootstrapBrand="warning"
+            app:bootstrapSize="md"
+            app:bootstrapText="@string/setting_confirm"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/localdir_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/setting_local_directory" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/localdir_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:roundedCorners="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/remotedir_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/setting_remote_directory" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/remotedir_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:roundedCorners="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/month_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/setting_month" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.knsw.kintai.SettingActivity">
+
+        <Spinner
+            android:id="@+id/month_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:entries="@array/monthList"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.knsw.kintai.SettingActivity">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/create_file_Button"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="7.5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="md"
+            app:bootstrapText="@string/seting_create"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/transfer_file_Button"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="md"
+            app:bootstrapText="@string/setting_transfer"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.knsw.kintai.SettingActivity">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/confirm_file_Button"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="7.5dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            app:bootstrapBrand="warning"
+            app:bootstrapSize="md"
+            app:bootstrapText="@string/setting_text_confirm"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/mail_Button"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:bootstrapText="@string/setting_mail"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

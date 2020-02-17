@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#C3FCF5F5"
+    tools:context="com.knsw.kintai.MailActivity">
+
+    <!--以下のライブラリを参照-->
+    <!--https://github.com/Bearded-Hen/Android-Bootstrap-->
+
+    <TextView
+        android:id="@+id/currentDateLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="@string/action_mail"
+        android:textColor="@android:color/white"
+        android:background="@color/bootstrap_brand_success"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/overTime_for_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="25sp"
+        android:textColorHighlight="@color/cardview_dark_background"
+         />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/to_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/to_address" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/to_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:roundedCorners="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/cc_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/cc_address" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/cc_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:roundedCorners="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/mail_title" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/title_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:roundedCorners="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/text_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/mail_main" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/text_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="273dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        android:gravity="top|left"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:roundedCorners="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/mailler_button"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20dp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="md"
+        app:bootstrapText="メーラー起動　{fa_arrow_circle_o_up}"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:id="@+id/overtime_fifteen_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        app:bootstrapText="@string/mail_calc_15" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout>
