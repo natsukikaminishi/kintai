@@ -1,4 +1,11 @@
-## knswの勤怠システムのAndroidアプリバージョン
+## 会社の勤怠システムのAndroidアプリバージョン
+
+## 作ったきっかけ
+コーディングしなさすぎで、したかったから</br>
+
+## このアプリを見るおすすめの人
+・初心者だけど、とにかく何か動くものが作りたい人</br>
+ (html,css,js不要で、簡単に動きます。)</br>
 
 ## 開発環境
 Android Studio
@@ -15,4 +22,3 @@ Android Studio
 
 ## サンプルgif
 ![sample](https://github.com/natsukikaminishi/kintai/blob/master/kintai_app.gif)
-https://github.com/natsukikaminishi/kintai/blob/master/kintai_app.gif
