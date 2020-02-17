@@ -1,9 +1,9 @@
 ## knswの勤怠システムのAndroidアプリバージョン
 
-# 開発環境
+## 開発環境
 Android Studio
 
-# 主な機能
+## 主な機能
 ・text入力/保存</br>
 (SQLite,Preference,Text Watcher)
 ・FTP送信
@@ -12,5 +12,5 @@ Android Studio
 ・Material Calendar view
 etc
 
-# サンプルgif
-<img src="kintai_app.gif" alt="sample" title="sample">
+## サンプルgif
+![sample](https://github.com/natsukikaminishi/kintai/kintai_app.gif)
