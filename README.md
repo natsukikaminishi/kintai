@@ -5,12 +5,12 @@ Android Studio
 
 ## 主な機能
 ・text入力/保存</br>
-(SQLite,Preference,Text Watcher)
-・FTP送信
-(Apache commmons)
-・メーラー起動
-・Material Calendar view
-etc
+(SQLite,Preference,Text Watcher)</br>
+・FTP送信</br>
+(Apache commmons)</br>
+・メーラー起動</br>
+・Material Calendar view</br>
+etc</br>
 
 ## サンプルgif
 https://github.com/natsukikaminishi/kintai/blob/master/kintai_app.gif
