@@ -6,7 +6,8 @@
 
 ## このアプリを見るおすすめの人
 ・初心者だけど、とにかく何か動くものが作りたい人</br>
- 　 　html,css,js不要で、簡単に動きます。</br>
+ 　 　html,js不要で、簡単に動きます。</br>
+ 　 　(bootStrapというcssライブラリは使っています。）</br>
  　 　MySQLなどpre installも不要で、Android Stadioさえinstallすれば開発できます。</br>
  　 　SQLiteによるDBアクセスは、内臓されたAndroid SDKで可能です。</br>
 
