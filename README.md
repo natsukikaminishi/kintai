@@ -29,4 +29,7 @@ Android Studio (+ Androidの実機があれば尚可)</br>
   etc</br>
 
 ## サンプルgif
+<p align="center">
+  <img src="https://github.com/natsukikaminishi/kintai/blob/master/kintai_app.gif" width=70%>  
+</p>　
 ![sample](https://github.com/natsukikaminishi/kintai/blob/master/kintai_app.gif)
