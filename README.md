@@ -1,7 +1,7 @@
 ## 会社の勤怠システムのAndroidアプリバージョン作ってみました
 (でも勤怠はクラウドにするらしい。)</br>
 
-<strong style="color: blue;">作ったきっかけ</strong> 
+## <span style="color: blue;">作ったきっかけ</span> 
 コーディングしなさすぎで、したかったｗ</br>
 
 ## このアプリを見るおすすめの人
