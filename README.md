@@ -30,7 +30,6 @@ Android Studio (+ Androidの実機があれば尚可)</br>
   * Intentで、簡易に画面遷移できますが、メーラーにも同じIntentで、簡易に遷移できます
 * Material Calendar view</br>
   * デフォルトのCalendar viewは、ちょっとださいので、上記を使用しました
-  * etc
 
 ## サンプルgif
 <p>
