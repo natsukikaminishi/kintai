@@ -40,12 +40,16 @@ public class CustomDialog extends AppCompatActivity {
     private SqliteOpenHelper helper = new SqliteOpenHelper(KintaiApp.getAppContext());
     private SQLiteDatabase db = helper.getWritableDatabase();
     private CalcUtil calcUtil = new CalcUtil();
+    private MainActivity mainActivity;
 
     /**
      * コンストラクタ
      */
-    public CustomDialog() {
+    public CustomDialog(MainActivity mainActivity) {
+        this.mainActivity = mainActivity;
     }
+
+    public CustomDialog() {}
 
     /* 設定ダイアログを表示 */
     public void showSettingDialog(Activity activity, Calendar calendar) {
@@ -318,6 +322,9 @@ public class CustomDialog extends AppCompatActivity {
                     setLateOrEarlyTime(CommonConst.argHourSingle[timeHour.getValue()] + ":" + CommonConst.argMinute[timeMinute.getValue() - 1]);
                     lateOrEarlyTime_edittext.setText(getLateOrEarlyTime());
                 }
+                // mainActivityに反映
+                mainActivity.initDisplay();
+                mainActivity.displayTotal();
             }
         });
         builder.setNegativeButton("Cancel", null);

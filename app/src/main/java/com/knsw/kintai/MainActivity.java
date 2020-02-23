@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     // クラス変数
     private SqliteOpenHelper helper = new SqliteOpenHelper(KintaiApp.getAppContext());
     private SQLiteDatabase db = helper.getWritableDatabase();
-    private CustomDialog customDialog = new CustomDialog();
+    private CustomDialog customDialog = new CustomDialog(MainActivity.this);
     private CalcUtil calcUtil = new CalcUtil();
     private int counter = 0;
     private String overTime;
@@ -87,32 +87,6 @@ public class MainActivity extends AppCompatActivity {
             public void onChange() {
                 // 勤務時間・残業時間合計表示
                 displayTotal();
-            }
-        });
-
-        /* workingTime_textview押下時イベント */
-        AwesomeTextView workingTime = findViewById(R.id.workingTime_textview);
-        workingTime.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                counter++;
-                if(counter >= 10) {
-                    Intent intent = new Intent(getApplication(), KintaiTextActivity.class);
-                    startActivity(intent);
-                }
-            }
-
-    });
-        /* workingTime_display_textview押下時イベント */
-        AwesomeTextView workingTimeisplay = findViewById(R.id.workingTime_display_textview);
-        workingTimeisplay.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                counter++;
-                if(counter >= 10) {
-                    // counterリセット
-                    counter = 0;
-                    Intent intent = new Intent(getApplication(), KintaiTextActivity.class);
-                    startActivity(intent);
-                }
             }
         });
 

@@ -140,7 +140,7 @@ public class CommonConst {
     public static final String STANDARD_WORK_TIME =  "08:00";
 
     /* KNSWのFTP SERVER IPアドレス(TODO:定期的に変わる) */
-    public static final String KNSW_FTP_SERVER =  "164.46.57.28";
+    public static final String KNSW_FTP_SERVER =  "";
 
     /* TP Directoryパス */
     public static final String REMOTE_DIRCTORY =  "";
