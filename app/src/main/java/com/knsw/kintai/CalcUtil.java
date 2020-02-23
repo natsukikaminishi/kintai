@@ -1,7 +1,5 @@
 package com.knsw.kintai;
 
-import com.applandeo.materialcalendarview.EventDay;
-
 import java.util.List;
 
 /*

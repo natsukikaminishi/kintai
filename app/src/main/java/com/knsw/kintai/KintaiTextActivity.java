@@ -6,8 +6,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.beardedhen.androidbootstrap.AwesomeTextView;
-
 public class KintaiTextActivity extends AppCompatActivity {
 
     @Override
