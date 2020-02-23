@@ -90,19 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /* RefreshButton押下時イベント */
-        BootstrapButton refreshButton = findViewById(R.id.RefreshButton);
-        refreshButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // アイコン表示
-                initDisplay();
-                // 勤務時間・残業時間合計表示
-                displayTotal();
-            }
-        });
-
-        /* SettingBotton押下時イベント */
+        /* SettingButton押下時イベント */
         BootstrapButton settingButton = findViewById(R.id.SettingButton);
         settingButton.setOnClickListener(new View.OnClickListener() {
             @Override
