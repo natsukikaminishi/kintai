@@ -40,13 +40,13 @@ public class CustomDialog extends AppCompatActivity {
     private SqliteOpenHelper helper = new SqliteOpenHelper(KintaiApp.getAppContext());
     private SQLiteDatabase db = helper.getWritableDatabase();
     private CalcUtil calcUtil = new CalcUtil();
-    private MainActivity mainActivity;
+    private MainActivity mainActivity = null;
 
     /**
      * コンストラクタ
      */
-    public CustomDialog(MainActivity mainActivity) {
-        this.mainActivity = mainActivity;
+    public CustomDialog(MainActivity main) {
+        this.mainActivity = main;
     }
 
     public CustomDialog() {}
@@ -211,6 +211,11 @@ public class CustomDialog extends AppCompatActivity {
                 else {
                     helper.updateData(db, kintaiVo);
                 }
+                // mainActivityに反映
+                if(mainActivity != null) {
+                    mainActivity.initDisplay();
+                    mainActivity.displayTotal();
+                }
             }
         });
         builder.setNeutralButton("削除", new DialogInterface.OnClickListener() {
@@ -218,6 +223,11 @@ public class CustomDialog extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 // Deleteクリック時の処理
                 helper.deleteData(db, year, month, day);
+                // mainActivityに反映
+                if(mainActivity != null) {
+                    mainActivity.initDisplay();
+                    mainActivity.displayTotal();
+                }
             }
         });
         builder.setNegativeButton("キャンセル", null);
@@ -322,9 +332,6 @@ public class CustomDialog extends AppCompatActivity {
                     setLateOrEarlyTime(CommonConst.argHourSingle[timeHour.getValue()] + ":" + CommonConst.argMinute[timeMinute.getValue() - 1]);
                     lateOrEarlyTime_edittext.setText(getLateOrEarlyTime());
                 }
-                // mainActivityに反映
-                mainActivity.initDisplay();
-                mainActivity.displayTotal();
             }
         });
         builder.setNegativeButton("Cancel", null);
